@@ -20,6 +20,8 @@ x-airflow-common: &airflow-common
     AIRFLOW_PASSWORD: ${AIRFLOW_PASSWORD:?defina .env}
     PRODUCT_DB_DSN: postgresql://${PRODUCT_DB_USER:-novamercado}:${PRODUCT_DB_PASSWORD:?defina .env}@db:5432/${PRODUCT_DB_NAME:-novamercado}
     MLFLOW_TRACKING_URI: http://mlflow:5000
+    MLFLOW_HTTP_REQUEST_MAX_RETRIES: "2"
+    MLFLOW_HTTP_REQUEST_TIMEOUT: "20"
   volumes:
     - ./dags:/opt/airflow/dags:ro
     - airflow-logs:/opt/airflow/logs
@@ -35,6 +37,8 @@ x-airflow-common: &airflow-common
 x-product-env: &product-env
   PRODUCT_DB_DSN: postgresql://${PRODUCT_DB_USER:-novamercado}:${PRODUCT_DB_PASSWORD:?defina .env}@db:5432/${PRODUCT_DB_NAME:-novamercado}
   MLFLOW_TRACKING_URI: http://mlflow:5000
+  MLFLOW_HTTP_REQUEST_MAX_RETRIES: "2"
+  MLFLOW_HTTP_REQUEST_TIMEOUT: "20"
 
 services:
   # ---------------------------------------------------------------- base de datos del producto

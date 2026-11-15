@@ -136,6 +136,10 @@ def create_app(repo, models: ModelManager, health: Health, airflow=None, backgro
         if row is None:
             return _reject(f"no existe la ejecución '{rid}'", 404)
         if row["estado"] in ("exitoso", "fallido"):
+            if row.get("version") is None and models.current is not None:
+                row = {**row, "version": models.current.version}  # vigente al terminar
+            if row.get("promovido") is None:
+                row = {**row, "promovido": False}
             return EstadoReentreno(**row)
         st = None
         if airflow is not None:

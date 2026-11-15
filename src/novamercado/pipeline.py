@@ -34,6 +34,7 @@ def retrain(run_id: str, repo=None) -> dict:
         if cat_d is None:
             raise RuntimeError("no hay catálogos cargados en la base de datos (¿corrió bootstrap?)")
         cat = Catalogs.from_dict(cat_d)
+        registry.ping()  # falla rápido si MLflow no está disponible (el vigente no se toca)
         hist, obs, promos = repo.training_data()
         panel = sales_panel(hist, obs, promos)
 

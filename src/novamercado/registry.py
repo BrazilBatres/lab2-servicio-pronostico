@@ -30,6 +30,13 @@ def client() -> MlflowClient:
     return MlflowClient()
 
 
+def ping(timeout: float = 5.0) -> None:
+    import urllib.request
+    uri = mlflow.get_tracking_uri()
+    if uri.startswith("http"):
+        urllib.request.urlopen(uri.rstrip("/") + "/health", timeout=timeout).read()
+
+
 def vigente_version() -> str | None:
     try:
         return str(client().get_model_version_by_alias(MODEL_NAME, ALIAS).version)
