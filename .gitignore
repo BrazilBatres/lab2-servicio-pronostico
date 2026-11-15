@@ -1,0 +1,12 @@
+# Datos publicados y credenciales: nunca en Git
+datos/*
+!datos/LEEME.md
+datos_publicados/
+.env
+*.pdf
+# Entorno
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+mlruns/
