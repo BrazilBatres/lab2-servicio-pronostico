@@ -10,14 +10,16 @@ import os
 import time
 
 import mlflow
+import pandas as pd
 
 from . import registry
 from .catalogs import Catalogs, catalogs_from_tables, read_published
 from .db import PostgresRepo
 from .features import sales_panel
-from .model import decide, evaluate_window, train_all
+from .model import VAL_DIAS, decide, evaluate_window, train_all
 
 log = logging.getLogger("novamercado.pipeline")
+MIN_DIAS_NUEVOS = int(os.getenv("MIN_DIAS_NUEVOS", "7"))
 
 
 def repo_from_env() -> PostgresRepo:
@@ -34,14 +36,26 @@ def retrain(run_id: str, repo=None) -> dict:
         cat = Catalogs.from_dict(cat_d)
         hist, obs, promos = repo.training_data()
         panel = sales_panel(hist, obs, promos)
-        ent = train_all(panel, cat)
+
+        # Ventana de comparación: solo días que el vigente NO vio al entrenarse (comparación justa).
+        vig = registry.vigente_version()
+        vig_model = registry.load_version(vig) if vig is not None else None
+        val_dias = VAL_DIAS
+        if vig_model is not None:
+            fechas = pd.Series(pd.to_datetime(panel.dropna(subset=["ventas"])["fecha"].unique()))
+            nuevos = int((fechas > pd.Timestamp(vig_model.entrenado_hasta)).sum())
+            if nuevos < MIN_DIAS_NUEVOS:
+                motivo = (f"Solo {nuevos} días con ventas nuevas desde que se entrenó el vigente "
+                          f"(mínimo {MIN_DIAS_NUEVOS}); se conserva el vigente")
+                repo.finish_reentreno(run_id, "exitoso", False, vig, motivo, {"dias_nuevos": nuevos})
+                return {"estado": "exitoso", "promovido": False, "version": vig, "motivo": motivo}
+            val_dias = min(VAL_DIAS, nuevos)
+        ent = train_all(panel, cat, val_dias=val_dias)
         cand = ent.modelos[ent.mejor]
         costo_cand = ent.metricas[ent.mejor]["costo"]
-
-        vig = registry.vigente_version()
         costo_vig = None
-        if vig is not None:
-            costo_vig = evaluate_window(registry.load_version(vig), panel, cat, ent.val_inicio, ent.val_fin)["costo"]
+        if vig_model is not None:
+            costo_vig = evaluate_window(vig_model, panel, cat, ent.val_inicio, ent.val_fin)["costo"]
         promovido, motivo = decide(costo_cand, costo_vig)
 
         mlflow.set_experiment(registry.EXPERIMENT)
