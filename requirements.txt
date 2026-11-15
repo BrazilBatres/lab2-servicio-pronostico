@@ -1,0 +1,9 @@
+fastapi==0.163.1
+uvicorn==0.54.0
+pydantic==2.14.3
+mlflow-skinny==3.18.0
+psycopg[binary]==3.3.9
+httpx==0.28.1
+pandas==3.1.1
+numpy==2.5.4
+lightgbm==4.7.0

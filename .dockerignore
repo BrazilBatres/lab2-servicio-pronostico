@@ -1,0 +1,8 @@
+.git
+.venv
+datos
+datos_publicados
+evidencia
+*.pdf
+.env
+**/__pycache__
