@@ -1,0 +1,361 @@
+[
+  {
+    "run_id": "5d13ad41f8d94302a6d2cf9b341a5487",
+    "nombre": "lgbm",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 54.82151567398792,
+      "rmse": 107.44690288406808,
+      "wape": 0.19872328007981016,
+      "sesgo": -0.0717210779443992,
+      "costo": 36721.3,
+      "n": 959.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "0cec49adad334fb7991ee4cdb812c5fc",
+      "tipo_modelo": "lgbm"
+    }
+  },
+  {
+    "run_id": "0b28ead7f2fd4a35b1dd361be014fd2f",
+    "nombre": "baseline",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 68.22758081334723,
+      "rmse": 137.44399442402909,
+      "wape": 0.2473191133891245,
+      "sesgo": -0.10672801427286266,
+      "costo": 43367.8,
+      "n": 959.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "0cec49adad334fb7991ee4cdb812c5fc",
+      "tipo_modelo": "baseline"
+    }
+  },
+  {
+    "run_id": "0cec49adad334fb7991ee4cdb812c5fc",
+    "nombre": "reentreno-reentreno_0db03d47e69d",
+    "estado": "FINISHED",
+    "metricas": {
+      "baseline_mae": 68.22758081334723,
+      "baseline_rmse": 137.44399442402909,
+      "baseline_wape": 0.2473191133891245,
+      "baseline_sesgo": -0.10672801427286266,
+      "baseline_costo": 43367.8,
+      "baseline_n": 959.0,
+      "lgbm_mae": 54.82151567398792,
+      "lgbm_rmse": 107.44690288406808,
+      "lgbm_wape": 0.19872328007981016,
+      "lgbm_sesgo": -0.0717210779443992,
+      "lgbm_costo": 36721.3,
+      "lgbm_n": 959.0,
+      "vigente_costo": 39462.200000000004,
+      "duracion_s": 13.841257810592651
+    },
+    "params": {
+      "val_inicio": "2026-03-28",
+      "val_fin": "2026-04-04",
+      "corte": "2026-03-27",
+      "filas_historico": "83052",
+      "filas_observaciones": "4199",
+      "fecha_max_datos": "2026-04-04",
+      "criterio": "costo_validacion_candidato < costo_validacion_vigente"
+    },
+    "tags": {
+      "reentreno_id": "reentreno_0db03d47e69d",
+      "modelo_elegido": "lgbm",
+      "vigente_previo": "4",
+      "promovido": "True"
+    }
+  },
+  {
+    "run_id": "bf699b7543d04169a9cfa11ce6543e6d",
+    "nombre": "lgbm",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 53.74122388386403,
+      "rmse": 108.24162299967652,
+      "wape": 0.20980245330729802,
+      "sesgo": -0.12512208797471425,
+      "costo": 29727.8,
+      "n": 838.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "eede78d2d8014c6ebcef9abf35a6c27d",
+      "tipo_modelo": "lgbm"
+    }
+  },
+  {
+    "run_id": "b6c4607e79e7454c8b20113334537866",
+    "nombre": "baseline",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 60.436754176610975,
+      "rmse": 115.63878763824842,
+      "wape": 0.2359413943304372,
+      "sesgo": -0.1187277258857236,
+      "costo": 34141.6,
+      "n": 838.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "eede78d2d8014c6ebcef9abf35a6c27d",
+      "tipo_modelo": "baseline"
+    }
+  },
+  {
+    "run_id": "eede78d2d8014c6ebcef9abf35a6c27d",
+    "nombre": "reentreno-reentreno_2db4649ecc6a",
+    "estado": "FINISHED",
+    "metricas": {
+      "baseline_mae": 60.436754176610975,
+      "baseline_rmse": 115.63878763824842,
+      "baseline_wape": 0.2359413943304372,
+      "baseline_sesgo": -0.1187277258857236,
+      "baseline_costo": 34141.6,
+      "baseline_n": 838.0,
+      "lgbm_mae": 53.74122388386403,
+      "lgbm_rmse": 108.24162299967652,
+      "lgbm_wape": 0.20980245330729802,
+      "lgbm_sesgo": -0.12512208797471425,
+      "lgbm_costo": 29727.8,
+      "lgbm_n": 838.0,
+      "vigente_costo": 30741.9,
+      "duracion_s": 12.12992262840271
+    },
+    "params": {
+      "val_inicio": "2026-03-21",
+      "val_fin": "2026-03-27",
+      "corte": "2026-03-20",
+      "filas_historico": "83052",
+      "filas_observaciones": "3228",
+      "fecha_max_datos": "2026-03-27",
+      "criterio": "costo_validacion_candidato < costo_validacion_vigente"
+    },
+    "tags": {
+      "reentreno_id": "reentreno_2db4649ecc6a",
+      "modelo_elegido": "lgbm",
+      "vigente_previo": "3",
+      "promovido": "True"
+    }
+  },
+  {
+    "run_id": "027b14b88e78493ca0882ccc592bb615",
+    "nombre": "lgbm",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 59.684018326385385,
+      "rmse": 114.50742776242248,
+      "wape": 0.21885099925811738,
+      "sesgo": -0.16438995418791988,
+      "costo": 28607.0,
+      "n": 836.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "c57f64442ef4495392d931a92d958659",
+      "tipo_modelo": "lgbm"
+    }
+  },
+  {
+    "run_id": "3273e7662ef94c9fa21908cde6b1055e",
+    "nombre": "baseline",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 73.67494019138756,
+      "rmse": 141.39098084642075,
+      "wape": 0.27015329619720163,
+      "sesgo": -0.21906552918987676,
+      "costo": 35573.600000000006,
+      "n": 836.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "c57f64442ef4495392d931a92d958659",
+      "tipo_modelo": "baseline"
+    }
+  },
+  {
+    "run_id": "c57f64442ef4495392d931a92d958659",
+    "nombre": "reentreno-reentreno_c6a1503e0151",
+    "estado": "FINISHED",
+    "metricas": {
+      "baseline_mae": 73.67494019138756,
+      "baseline_rmse": 141.39098084642075,
+      "baseline_wape": 0.27015329619720163,
+      "baseline_sesgo": -0.21906552918987676,
+      "baseline_costo": 35573.600000000006,
+      "baseline_n": 836.0,
+      "lgbm_mae": 59.684018326385385,
+      "lgbm_rmse": 114.50742776242248,
+      "lgbm_wape": 0.21885099925811738,
+      "lgbm_sesgo": -0.16438995418791988,
+      "lgbm_costo": 28607.0,
+      "lgbm_n": 836.0,
+      "vigente_costo": 38488.7,
+      "duracion_s": 12.366383075714111
+    },
+    "params": {
+      "val_inicio": "2026-03-14",
+      "val_fin": "2026-03-20",
+      "corte": "2026-03-13",
+      "filas_historico": "83052",
+      "filas_observaciones": "2390",
+      "fecha_max_datos": "2026-03-20",
+      "criterio": "costo_validacion_candidato < costo_validacion_vigente"
+    },
+    "tags": {
+      "reentreno_id": "reentreno_c6a1503e0151",
+      "modelo_elegido": "lgbm",
+      "vigente_previo": "2",
+      "promovido": "True"
+    }
+  },
+  {
+    "run_id": "31dd3a4a1a6347d5b1d2a258b8c01080",
+    "nombre": "lgbm",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 45.23078149720719,
+      "rmse": 82.9654713397415,
+      "wape": 0.22186648752441548,
+      "sesgo": -0.012474151391799245,
+      "costo": 49501.899999999994,
+      "n": 1554.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "44d27e28c40148d28c970d08a631d790",
+      "tipo_modelo": "lgbm"
+    }
+  },
+  {
+    "run_id": "301f83fbbda04fd8a5dad7964ec66523",
+    "nombre": "baseline",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 55.310810810810814,
+      "rmse": 98.23590255848445,
+      "wape": 0.2713111494100491,
+      "sesgo": 0.015013920190905475,
+      "costo": 59300.1,
+      "n": 1554.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "44d27e28c40148d28c970d08a631d790",
+      "tipo_modelo": "baseline"
+    }
+  },
+  {
+    "run_id": "44d27e28c40148d28c970d08a631d790",
+    "nombre": "reentreno-reentreno_af8dabbb9cb5",
+    "estado": "FINISHED",
+    "metricas": {
+      "baseline_mae": 55.310810810810814,
+      "baseline_rmse": 98.23590255848445,
+      "baseline_wape": 0.2713111494100491,
+      "baseline_sesgo": 0.015013920190905475,
+      "baseline_costo": 59300.1,
+      "baseline_n": 1554.0,
+      "lgbm_mae": 45.23078149720719,
+      "lgbm_rmse": 82.9654713397415,
+      "lgbm_wape": 0.22186648752441548,
+      "lgbm_sesgo": -0.012474151391799245,
+      "lgbm_costo": 49501.899999999994,
+      "lgbm_n": 1554.0,
+      "vigente_costo": 49983.0,
+      "duracion_s": 13.205979824066162
+    },
+    "params": {
+      "val_inicio": "2026-03-01",
+      "val_fin": "2026-03-13",
+      "corte": "2026-02-28",
+      "filas_historico": "83052",
+      "filas_observaciones": "1554",
+      "fecha_max_datos": "2026-03-13",
+      "criterio": "costo_validacion_candidato < costo_validacion_vigente"
+    },
+    "tags": {
+      "reentreno_id": "reentreno_af8dabbb9cb5",
+      "modelo_elegido": "lgbm",
+      "vigente_previo": "1",
+      "promovido": "True"
+    }
+  },
+  {
+    "run_id": "f3eefd0fe97549e9b4e82b27d59d4b0e",
+    "nombre": "lgbm",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 37.95023017620578,
+      "rmse": 69.7608741085834,
+      "wape": 0.1775511169172575,
+      "sesgo": -0.01009327558726162,
+      "costo": 88027.9,
+      "n": 3360.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "0749fe13287c4cc7a666c3b2a1d7f9d3",
+      "tipo_modelo": "lgbm"
+    }
+  },
+  {
+    "run_id": "7cde14f1758b491fb180748b1b6113f6",
+    "nombre": "baseline",
+    "estado": "FINISHED",
+    "metricas": {
+      "mae": 45.89635416666667,
+      "rmse": 85.3535324531571,
+      "wape": 0.2147272600689247,
+      "sesgo": -0.041931632262331604,
+      "costo": 105547.5,
+      "n": 3360.0
+    },
+    "params": {},
+    "tags": {
+      "mlflow.parentRunId": "0749fe13287c4cc7a666c3b2a1d7f9d3",
+      "tipo_modelo": "baseline"
+    }
+  },
+  {
+    "run_id": "0749fe13287c4cc7a666c3b2a1d7f9d3",
+    "nombre": "reentreno-bootstrap",
+    "estado": "FINISHED",
+    "metricas": {
+      "baseline_mae": 45.89635416666667,
+      "baseline_rmse": 85.3535324531571,
+      "baseline_wape": 0.2147272600689247,
+      "baseline_sesgo": -0.041931632262331604,
+      "baseline_costo": 105547.5,
+      "baseline_n": 3360.0,
+      "lgbm_mae": 37.95023017620578,
+      "lgbm_rmse": 69.7608741085834,
+      "lgbm_wape": 0.1775511169172575,
+      "lgbm_sesgo": -0.01009327558726162,
+      "lgbm_costo": 88027.9,
+      "lgbm_n": 3360.0,
+      "duracion_s": 35.77723050117493
+    },
+    "params": {
+      "val_inicio": "2026-02-01",
+      "val_fin": "2026-02-28",
+      "corte": "2026-01-31",
+      "filas_historico": "83052",
+      "filas_observaciones": "0",
+      "fecha_max_datos": "2026-02-28",
+      "criterio": "costo_validacion_candidato < costo_validacion_vigente"
+    },
+    "tags": {
+      "reentreno_id": "bootstrap",
+      "modelo_elegido": "lgbm",
+      "vigente_previo": "ninguno",
+      "promovido": "True"
+    }
+  }
+]

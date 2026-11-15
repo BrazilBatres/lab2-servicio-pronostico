@@ -1,0 +1,223 @@
+{
+  "modelo_registrado": {
+    "registered_model": {
+      "name": "novamercado_ventas",
+      "creation_timestamp": 1794770745678,
+      "last_updated_timestamp": 1794771439667,
+      "latest_versions": [
+        {
+          "name": "novamercado_ventas",
+          "version": "5",
+          "creation_timestamp": 1794771439667,
+          "last_updated_timestamp": 1794771439667,
+          "current_stage": "None",
+          "description": "",
+          "source": "models:/m-8adcfe65765848d4a600b505536589a5",
+          "run_id": "0cec49adad334fb7991ee4cdb812c5fc",
+          "status": "READY",
+          "tags": [
+            {
+              "key": "reentreno_id",
+              "value": "reentreno_0db03d47e69d"
+            },
+            {
+              "key": "tipo_modelo",
+              "value": "lgbm"
+            },
+            {
+              "key": "costo_validacion",
+              "value": "36721.3"
+            },
+            {
+              "key": "promovido",
+              "value": "True"
+            },
+            {
+              "key": "motivo",
+              "value": "Costo en validación 36 721 vs 39 462 del vigente"
+            }
+          ],
+          "run_link": ""
+        }
+      ],
+      "aliases": [
+        {
+          "alias": "vigente",
+          "version": "5"
+        }
+      ]
+    }
+  },
+  "versiones": [
+    {
+      "name": "novamercado_ventas",
+      "version": "5",
+      "creation_timestamp": 1794771439667,
+      "last_updated_timestamp": 1794771439667,
+      "current_stage": "None",
+      "description": "",
+      "source": "models:/m-8adcfe65765848d4a600b505536589a5",
+      "run_id": "0cec49adad334fb7991ee4cdb812c5fc",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "reentreno_id",
+          "value": "reentreno_0db03d47e69d"
+        },
+        {
+          "key": "tipo_modelo",
+          "value": "lgbm"
+        },
+        {
+          "key": "costo_validacion",
+          "value": "36721.3"
+        },
+        {
+          "key": "promovido",
+          "value": "True"
+        },
+        {
+          "key": "motivo",
+          "value": "Costo en validación 36 721 vs 39 462 del vigente"
+        }
+      ],
+      "run_link": ""
+    },
+    {
+      "name": "novamercado_ventas",
+      "version": "4",
+      "creation_timestamp": 1794770947719,
+      "last_updated_timestamp": 1794770947719,
+      "current_stage": "None",
+      "description": "",
+      "source": "models:/m-a0b96f7d75f64112b881c6d6e0e0e66f",
+      "run_id": "eede78d2d8014c6ebcef9abf35a6c27d",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "reentreno_id",
+          "value": "reentreno_2db4649ecc6a"
+        },
+        {
+          "key": "tipo_modelo",
+          "value": "lgbm"
+        },
+        {
+          "key": "costo_validacion",
+          "value": "29727.8"
+        },
+        {
+          "key": "promovido",
+          "value": "True"
+        },
+        {
+          "key": "motivo",
+          "value": "Costo en validación 29 728 vs 30 742 del vigente"
+        }
+      ],
+      "run_link": ""
+    },
+    {
+      "name": "novamercado_ventas",
+      "version": "3",
+      "creation_timestamp": 1794770908928,
+      "last_updated_timestamp": 1794770908928,
+      "current_stage": "None",
+      "description": "",
+      "source": "models:/m-3f71b526623947a08a9741c2ffe278f5",
+      "run_id": "c57f64442ef4495392d931a92d958659",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "reentreno_id",
+          "value": "reentreno_c6a1503e0151"
+        },
+        {
+          "key": "tipo_modelo",
+          "value": "lgbm"
+        },
+        {
+          "key": "costo_validacion",
+          "value": "28607.0"
+        },
+        {
+          "key": "promovido",
+          "value": "True"
+        },
+        {
+          "key": "motivo",
+          "value": "Costo en validación 28 607 vs 38 489 del vigente"
+        }
+      ],
+      "run_link": ""
+    },
+    {
+      "name": "novamercado_ventas",
+      "version": "2",
+      "creation_timestamp": 1794770858498,
+      "last_updated_timestamp": 1794770858498,
+      "current_stage": "None",
+      "description": "",
+      "source": "models:/m-8da5c29c08e24e2282925bc70938c18a",
+      "run_id": "44d27e28c40148d28c970d08a631d790",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "reentreno_id",
+          "value": "reentreno_af8dabbb9cb5"
+        },
+        {
+          "key": "tipo_modelo",
+          "value": "lgbm"
+        },
+        {
+          "key": "costo_validacion",
+          "value": "49501.9"
+        },
+        {
+          "key": "promovido",
+          "value": "True"
+        },
+        {
+          "key": "motivo",
+          "value": "Costo en validación 49 502 vs 49 983 del vigente"
+        }
+      ],
+      "run_link": ""
+    },
+    {
+      "name": "novamercado_ventas",
+      "version": "1",
+      "creation_timestamp": 1794770745739,
+      "last_updated_timestamp": 1794770745739,
+      "current_stage": "None",
+      "description": "",
+      "source": "models:/m-b023e00762ee4bf8b5a14d5dd5769a54",
+      "run_id": "0749fe13287c4cc7a666c3b2a1d7f9d3",
+      "status": "READY",
+      "tags": [
+        {
+          "key": "reentreno_id",
+          "value": "bootstrap"
+        },
+        {
+          "key": "tipo_modelo",
+          "value": "lgbm"
+        },
+        {
+          "key": "costo_validacion",
+          "value": "88027.9"
+        },
+        {
+          "key": "promovido",
+          "value": "True"
+        },
+        {
+          "key": "motivo",
+          "value": "No hay modelo vigente evaluable; costo en validación del candidato 88 028"
+        }
+      ],
+      "run_link": ""
+    }
+  ]
+}

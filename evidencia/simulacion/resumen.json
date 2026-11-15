@@ -1,0 +1,193 @@
+{
+  "dias": 28,
+  "desde": "2026-03-01",
+  "predicciones_familia": 3220,
+  "costo_total": 119086.6,
+  "respuestas_por_estado": {
+    "200:ok": 194,
+    "200:corregido": 39,
+    "422:rechazo": 8,
+    "200:advertencia": 39
+  },
+  "eventos": [
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reentreno",
+      "id": "reentreno_1b569b360098",
+      "duracion_s": 17.1,
+      "estado": {
+        "estado": "exitoso",
+        "promovido": false,
+        "version": "1",
+        "motivo": "Solo 6 días con ventas nuevas desde que se entrenó el vigente (mínimo 7); se conserva el vigente"
+      },
+      "segundos_hasta_usar_nuevo": null
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reentreno",
+      "id": "reentreno_e0c4266428b9",
+      "duracion_s": 10.2,
+      "estado": {
+        "estado": "fallido",
+        "promovido": false,
+        "version": "1",
+        "motivo": "Falló el reentrenamiento: <urlopen error [Errno -2] Name or service not known>"
+      },
+      "segundos_hasta_usar_nuevo": null
+    },
+    {
+      "evento": "caida_mlflow",
+      "segundos_hasta_degradado": 4.0,
+      "prediccion_durante_caida_http": 200,
+      "reentreno_durante_caida": {
+        "estado": "fallido",
+        "promovido": false,
+        "version": "1",
+        "motivo": "Falló el reentrenamiento: <urlopen error [Errno -2] Name or service not known>"
+      },
+      "segundos_hasta_ok_al_volver": 20.1
+    },
+    {
+      "evento": "reentreno",
+      "id": "reentreno_af8dabbb9cb5",
+      "duracion_s": 20.3,
+      "estado": {
+        "estado": "exitoso",
+        "promovido": true,
+        "version": "2",
+        "motivo": "Costo en validación 49 502 vs 49 983 del vigente"
+      },
+      "segundos_hasta_usar_nuevo": 14.0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reentreno",
+      "id": "reentreno_c6a1503e0151",
+      "duracion_s": 20.3,
+      "estado": {
+        "estado": "exitoso",
+        "promovido": true,
+        "version": "3",
+        "motivo": "Costo en validación 28 607 vs 38 489 del vigente"
+      },
+      "segundos_hasta_usar_nuevo": 2.0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reentreno",
+      "id": "reentreno_2db4649ecc6a",
+      "duracion_s": 20.3,
+      "estado": {
+        "estado": "exitoso",
+        "promovido": true,
+        "version": "4",
+        "motivo": "Costo en validación 29 728 vs 30 742 del vigente"
+      },
+      "segundos_hasta_usar_nuevo": 4.0
+    },
+    {
+      "evento": "reinicio_sin_borrar_volumenes",
+      "segundos_hasta_ok": 30.1,
+      "total_s": 59.2,
+      "modelo_tras_reinicio": {
+        "nombre": "novamercado_ventas",
+        "alias": "vigente",
+        "version": "4"
+      },
+      "bootstrap_log": [
+        "bootstrap-1  | 2026-11-15 19:29:30,267 WARNING Retrying (Retry(total=1, connect=1, read=2, redirect=2, status=2)) after connection broken by 'NewConnectionError(\"HTTPConnection(host='mlflow', port=5000): Failed to establish a new connection: [Errno 111] Connection refused\")': /api/2.0/mlflow/registered-models/search?filter=tag.%60mlflow.prompt.is_prompt%60+%21%3D+%27true%27&max_results=1",
+        "bootstrap-1  | 2026-11-15 19:29:34,729 WARNING Retrying (Retry(total=0, connect=0, read=2, redirect=2, status=2)) after connection broken by 'NewConnectionError(\"HTTPConnection(host='mlflow', port=5000): Failed to establish a new connection: [Errno 111] Connection refused\")': /api/2.0/mlflow/registered-models/search?filter=tag.%60mlflow.prompt.is_prompt%60+%21%3D+%27true%27&max_results=1",
+        "bootstrap-1  | 2026-11-15 19:29:36,653 INFO ya existe modelo vigente (4); no se reentrena"
+      ]
+    }
+  ]
+}

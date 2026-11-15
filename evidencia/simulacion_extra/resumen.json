@@ -1,0 +1,58 @@
+{
+  "dias": 9,
+  "desde": "2026-03-28",
+  "predicciones_familia": 1028,
+  "costo_total": 41828.2,
+  "respuestas_por_estado": {
+    "200:ok": 61,
+    "200:advertencia": 10,
+    "200:corregido": 15,
+    "422:rechazo": 4
+  },
+  "eventos": [
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reenvio_observacion",
+      "registros_guardados": 0
+    },
+    {
+      "evento": "reentreno",
+      "id": "reentreno_0db03d47e69d",
+      "duracion_s": 27.4,
+      "estado": {
+        "estado": "exitoso",
+        "promovido": true,
+        "version": "5",
+        "motivo": "Costo en validación 36 721 vs 39 462 del vigente"
+      },
+      "segundos_hasta_usar_nuevo": 16.0
+    }
+  ]
+}

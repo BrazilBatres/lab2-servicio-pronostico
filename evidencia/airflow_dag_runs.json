@@ -1,0 +1,152 @@
+[
+  {
+    "dag_run_id": "reentreno_1b569b360098",
+    "state": "success",
+    "start_date": "2026-11-15T19:26:16.199452Z",
+    "end_date": "2026-11-15T19:26:27.431952Z",
+    "run_type": "manual",
+    "tareas": [
+      {
+        "task_id": "verificar_datos",
+        "state": "success",
+        "start_date": "2026-11-15T19:26:16.334989Z",
+        "end_date": "2026-11-15T19:26:22.509348Z",
+        "duration": 6.174359,
+        "try_number": 1
+      },
+      {
+        "task_id": "entrenar_evaluar_promover",
+        "state": "success",
+        "start_date": "2026-11-15T19:26:23.293505Z",
+        "end_date": "2026-11-15T19:26:27.118100Z",
+        "duration": 3.824595,
+        "try_number": 1
+      }
+    ]
+  },
+  {
+    "dag_run_id": "reentreno_e0c4266428b9",
+    "state": "failed",
+    "start_date": "2026-11-15T19:26:50.246625Z",
+    "end_date": "2026-11-15T19:27:04.298796Z",
+    "run_type": "manual",
+    "tareas": [
+      {
+        "task_id": "verificar_datos",
+        "state": "success",
+        "start_date": "2026-11-15T19:26:50.303821Z",
+        "end_date": "2026-11-15T19:26:52.103262Z",
+        "duration": 1.799441,
+        "try_number": 1
+      },
+      {
+        "task_id": "entrenar_evaluar_promover",
+        "state": "failed",
+        "start_date": "2026-11-15T19:26:52.391639Z",
+        "end_date": "2026-11-15T19:27:04.099298Z",
+        "duration": 11.707659,
+        "try_number": 1
+      }
+    ]
+  },
+  {
+    "dag_run_id": "reentreno_af8dabbb9cb5",
+    "state": "success",
+    "start_date": "2026-11-15T19:27:22.362688Z",
+    "end_date": "2026-11-15T19:27:40.313586Z",
+    "run_type": "manual",
+    "tareas": [
+      {
+        "task_id": "verificar_datos",
+        "state": "success",
+        "start_date": "2026-11-15T19:27:22.419505Z",
+        "end_date": "2026-11-15T19:27:24.270409Z",
+        "duration": 1.850904,
+        "try_number": 1
+      },
+      {
+        "task_id": "entrenar_evaluar_promover",
+        "state": "success",
+        "start_date": "2026-11-15T19:27:24.515737Z",
+        "end_date": "2026-11-15T19:27:39.428378Z",
+        "duration": 14.912641,
+        "try_number": 1
+      }
+    ]
+  },
+  {
+    "dag_run_id": "reentreno_c6a1503e0151",
+    "state": "success",
+    "start_date": "2026-11-15T19:28:13.468257Z",
+    "end_date": "2026-11-15T19:28:30.478862Z",
+    "run_type": "manual",
+    "tareas": [
+      {
+        "task_id": "verificar_datos",
+        "state": "success",
+        "start_date": "2026-11-15T19:28:13.529427Z",
+        "end_date": "2026-11-15T19:28:15.513757Z",
+        "duration": 1.98433,
+        "try_number": 1
+      },
+      {
+        "task_id": "entrenar_evaluar_promover",
+        "state": "success",
+        "start_date": "2026-11-15T19:28:15.643318Z",
+        "end_date": "2026-11-15T19:28:29.875698Z",
+        "duration": 14.23238,
+        "try_number": 1
+      }
+    ]
+  },
+  {
+    "dag_run_id": "reentreno_2db4649ecc6a",
+    "state": "success",
+    "start_date": "2026-11-15T19:28:52.544954Z",
+    "end_date": "2026-11-15T19:29:09.558356Z",
+    "run_type": "manual",
+    "tareas": [
+      {
+        "task_id": "verificar_datos",
+        "state": "success",
+        "start_date": "2026-11-15T19:28:52.606791Z",
+        "end_date": "2026-11-15T19:28:54.633839Z",
+        "duration": 2.027048,
+        "try_number": 1
+      },
+      {
+        "task_id": "entrenar_evaluar_promover",
+        "state": "success",
+        "start_date": "2026-11-15T19:28:54.717205Z",
+        "end_date": "2026-11-15T19:29:08.685098Z",
+        "duration": 13.967893,
+        "try_number": 1
+      }
+    ]
+  },
+  {
+    "dag_run_id": "reentreno_0db03d47e69d",
+    "state": "success",
+    "start_date": "2026-11-15T19:36:57.541681Z",
+    "end_date": "2026-11-15T19:37:21.246394Z",
+    "run_type": "manual",
+    "tareas": [
+      {
+        "task_id": "verificar_datos",
+        "state": "success",
+        "start_date": "2026-11-15T19:36:57.679518Z",
+        "end_date": "2026-11-15T19:37:03.495148Z",
+        "duration": 5.81563,
+        "try_number": 1
+      },
+      {
+        "task_id": "entrenar_evaluar_promover",
+        "state": "success",
+        "start_date": "2026-11-15T19:37:04.559253Z",
+        "end_date": "2026-11-15T19:37:20.608971Z",
+        "duration": 16.049718,
+        "try_number": 1
+      }
+    ]
+  }
+]
