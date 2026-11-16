@@ -1,0 +1,47 @@
+2026-03-01 ok  costo acumulado=4,738  modelo=1
+2026-03-02 ok  costo acumulado=7,658  modelo=1
+2026-03-03 ok  costo acumulado=10,424  modelo=1
+2026-03-04 ok  costo acumulado=13,604  modelo=1
+2026-03-05 ok  costo acumulado=16,514  modelo=1
+2026-03-06 ok  costo acumulado=19,753  modelo=1
+2026-03-07 ok  costo acumulado=23,087  modelo=1
+{"evento": "reentreno", "id": "reentreno_1b569b360098", "duracion_s": 17.1, "estado": {"estado": "exitoso", "promovido": false, "version": "1", "motivo": "Solo 6 días con ventas nuevas desde que se entrenó el vigente (mínimo 7); se conserva el vigente"}, "segundos_hasta_usar_nuevo": null}
+2026-03-08 ok  costo acumulado=26,744  modelo=1
+2026-03-09 ok  costo acumulado=29,443  modelo=1
+2026-03-10 ok  costo acumulado=32,614  modelo=1
+2026-03-11 ok  costo acumulado=37,200  modelo=1
+2026-03-12 ok  costo acumulado=42,447  modelo=1
+2026-03-13 ok  costo acumulado=48,655  modelo=1
+{"evento": "reentreno", "id": "reentreno_e0c4266428b9", "duracion_s": 10.2, "estado": {"estado": "fallido", "promovido": false, "version": "1", "motivo": "Falló el reentrenamiento: <urlopen error [Errno -2] Name or service not known>"}, "segundos_hasta_usar_nuevo": null}
+{"evento": "caida_mlflow", "segundos_hasta_degradado": 4.0, "prediccion_durante_caida_http": 200, "reentreno_durante_caida": {"estado": "fallido", "promovido": false, "version": "1", "motivo": "Falló el reentrenamiento: <urlopen error [Errno -2] Name or service not known>"}, "segundos_hasta_ok_al_volver": 20.1}
+2026-03-14 ok  costo acumulado=58,935  modelo=1
+{"evento": "reentreno", "id": "reentreno_af8dabbb9cb5", "duracion_s": 20.3, "estado": {"estado": "exitoso", "promovido": true, "version": "2", "motivo": "Costo en validación 49 502 vs 49 983 del vigente"}, "segundos_hasta_usar_nuevo": 14.0}
+2026-03-15 ok  costo acumulado=64,573  modelo=2
+2026-03-16 ok  costo acumulado=68,965  modelo=2
+2026-03-17 ok  costo acumulado=73,035  modelo=2
+2026-03-18 ok  costo acumulado=77,167  modelo=2
+2026-03-19 ok  costo acumulado=81,873  modelo=2
+2026-03-20 ok  costo acumulado=87,247  modelo=2
+2026-03-21 ok  costo acumulado=92,668  modelo=2
+{"evento": "reentreno", "id": "reentreno_c6a1503e0151", "duracion_s": 20.3, "estado": {"estado": "exitoso", "promovido": true, "version": "3", "motivo": "Costo en validación 28 607 vs 38 489 del vigente"}, "segundos_hasta_usar_nuevo": 2.0}
+2026-03-22 ok  costo acumulado=95,514  modelo=3
+2026-03-23 ok  costo acumulado=98,314  modelo=3
+2026-03-24 ok  costo acumulado=101,687  modelo=3
+2026-03-25 ok  costo acumulado=105,887  modelo=3
+2026-03-26 ok  costo acumulado=109,618  modelo=3
+2026-03-27 ok  costo acumulado=113,982  modelo=3
+2026-03-28 ok  costo acumulado=119,087  modelo=3
+{"evento": "reentreno", "id": "reentreno_2db4649ecc6a", "duracion_s": 20.3, "estado": {"estado": "exitoso", "promovido": true, "version": "4", "motivo": "Costo en validación 29 728 vs 30 742 del vigente"}, "segundos_hasta_usar_nuevo": 4.0}
+{"evento": "reinicio_sin_borrar_volumenes", "segundos_hasta_ok": 30.1, "total_s": 59.2, "modelo_tras_reinicio": {"nombre": "novamercado_ventas", "alias": "vigente", "version": "4"}, "bootstrap_log": ["bootstrap-1  | 2026-11-15 19:29:30,267 WARNING Retrying (Retry(total=1, connect=1, read=2, redirect=2, status=2)) after connection broken by 'NewConnectionError(\"HTTPConnection(host='mlflow', port=5000): Failed to establish a new connection: [Errno 111] Connection refused\")': /api/2.0/mlflow/registered-models/search?filter=tag.%60mlflow.prompt.is_prompt%60+%21%3D+%27true%27&max_results=1", "bootstrap-1  | 2026-11-15 19:29:34,729 WARNING Retrying (Retry(total=0, connect=0, read=2, redirect=2, status=2)) after connection broken by 'NewConnectionError(\"HTTPConnection(host='mlflow', port=5000): Failed to establish a new connection: [Errno 111] Connection refused\")': /api/2.0/mlflow/registered-models/search?filter=tag.%60mlflow.prompt.is_prompt%60+%21%3D+%27true%27&max_results=1", "bootstrap-1  | 2026-11-15 19:29:36,653 INFO ya existe modelo vigente (4); no se reentrena"]}
+{
+  "dias": 28,
+  "desde": "2026-03-01",
+  "predicciones_familia": 3220,
+  "costo_total": 119086.6,
+  "respuestas_por_estado": {
+    "200:ok": 194,
+    "200:corregido": 39,
+    "422:rechazo": 8,
+    "200:advertencia": 39
+  }
+}
